@@ -1,0 +1,50 @@
+Шпаргалка по C++   ///    Cheat sheet by C++
+
+Простейшая программа
+#include <iostream> 
+using namespace std;
+const double Pi=3.1415;
+int main()
+{
+double r; cin>>r;
+double S=Pi*r*r;
+cout<<"Площадь круга = "<<S<<endl; return 0;
+}
+
+Ввод/ вывод
+cin>>a>>b>>c; cout<<a<<b<<c;
+Основные типы
+short int	(2) // или short unsigned int (4) // или unsigned
+int	(4)
+float	(4)
+double	(8)
+bool	(1)
+char	(1)
+unsigned char (1) string
+
+Константы
+const int i=5;
+double const Pi=3.1415;
+
+Неявные преобразования типов
+int i=3.7; // i==3 char c=128;
+c='z'-2;
+bool b=0; // false int i=true; // i==1
+
+Основные операции
+i << 3 // i shl 3 
+i >> 2 // i shr 2
+a+=2;	// a=a+2;
+c*=n;	// c=c*n;
+b=a++; // t=a; a++;
+b=t; b=++a;
+// a++; b=a;
+7/3	// 7 div 3
+7%3	// 7 mod 3
+(i<0 || i>2)	// или (i>=2 && i<=3)
+// и
+!(i>2)	// не
+& | ^ // побитовые and, or, xor
+min = a<b ? a : b; // условная
+a=b=c; // множественное присваивание
+
